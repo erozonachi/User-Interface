@@ -60,7 +60,7 @@ html {
 }
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Raleway', sans-serif;; /* 'Titillium Web', sans-serif; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -88,11 +88,19 @@ section {
 	margin-bottom: 50px;
 }
 
+.nav-gap {
+	margin-top: 150px;
+}
+
 nav {
 	padding: 20px 0;
-	margin-bottom: 20px;
-	display: inline-block;
-	width: 100%;
+	margin-bottom: 50px;
+	display: block;
+	width: 85.25%;
+	background-color: #aaaaaa;
+	position:fixed;
+	top:0px;
+	z-index: 1;
 }
 
 div {
