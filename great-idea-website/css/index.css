@@ -1,7 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
+*/ 
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,13 +48,19 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
 
+* {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Raleway', sans-serif;; /* 'Titillium Web', sans-serif; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,3 +70,110 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+body {
+	margin: 0 auto;
+	padding: 0 100px;
+}
+
+header, main {
+	border-bottom: 1px solid black;
+}
+
+section {
+	margin: 20px 0;
+}
+
+.header-gap {
+	margin-bottom: 50px;
+}
+
+.nav-gap {
+	margin-top: 150px;
+}
+
+nav {
+	padding: 20px 0;
+	margin-bottom: 50px;
+	display: block;
+	width: 85.25%;
+	background-color: #aaaaaa;
+	position:fixed;
+	top:0px;
+	z-index: 1;
+}
+
+div {
+	 display: inline-block;
+	 width: 50%;
+}
+
+button {
+	margin: 0 35% 50px 35%;
+	width: 30%;
+	border: 1px solid black;
+	border-radius: 0;
+	padding: 10px 0;
+	font-size: 100%;
+	cursor: pointer;
+}
+
+ul, li {
+	display: inline-block;
+	text-align: center;
+}
+
+ul {
+	width: 80%;
+}
+
+li {
+	margin-right: 10%;
+	padding-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #cccccc;
+	text-align: inherit;
+}
+
+a:hover {
+	color: #000000;
+}
+
+.logo, .header-img {
+	display: inline;
+}
+
+h1 {
+	text-align: center;
+	font-size: 5em;
+}
+
+.inline-50 {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+
+.inline-33 {
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+}
+
+.middle-img {
+	display: block;
+	width: 100%;
+}
+
+footer {
+	margin: 40px 0 20px 0;
+}
+
+.copy {
+	display: block;
+	margin: 100px 0;
+	text-align: center;
+}
